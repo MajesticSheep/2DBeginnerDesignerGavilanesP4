@@ -7,8 +7,12 @@ public class BetterPlayerController : MonoBehaviour
 {
     public float speed = 3.0f;
     public int maxHealth = 5;
+    public float timeInvincible = 2;
     public int health { get { return currentHealth; } }
     int currentHealth;
+
+    bool isInvincible;
+    float inInvincible;
 
     Rigidbody2D rigidbody2d;
     float horizontal;
@@ -19,7 +23,7 @@ public class BetterPlayerController : MonoBehaviour
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
-        currentHealth = 1;
+        
     }
 
     // Update is called once per frame
@@ -27,6 +31,14 @@ public class BetterPlayerController : MonoBehaviour
     {
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
+
+        if(isInvincible)
+        {
+            
+            {
+                isInvincible = false;
+            }
+        }
 
     }
 
@@ -40,6 +52,14 @@ public class BetterPlayerController : MonoBehaviour
     }
     public void ChangeHealth(int amount)
     {
+        if(amount < 0)
+        {
+            if(isInvincible)
+            {
+                return;
+            }
+            isInvincible = true;
+        }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         Debug.Log(currentHealth + "/" + maxHealth);
     }
