@@ -6715,7 +6715,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.406868
+  orthographic size: 6.0598025
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7374,6 +7374,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7672042644257074356, guid: c3885efaf6d96b542a30f41e55ec9c23,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.7787824
+      objectReference: {fileID: 0}
+    - target: {fileID: 7672042644257074356, guid: c3885efaf6d96b542a30f41e55ec9c23,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.17631778
+      objectReference: {fileID: 0}
+    - target: {fileID: 7672042644257074356, guid: c3885efaf6d96b542a30f41e55ec9c23,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.048095018
+      objectReference: {fileID: 0}
+    - target: {fileID: 7672042644257074356, guid: c3885efaf6d96b542a30f41e55ec9c23,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.52075905
       objectReference: {fileID: 0}
     - target: {fileID: 7796382551868772543, guid: c3885efaf6d96b542a30f41e55ec9c23,
         type: 3}
@@ -11124,6 +11144,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 669650588}
     m_Modifications:
+    - target: {fileID: 689215222007149169, guid: 1caa7345e24ec7b4fb52a117a2e6cad4,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.6756251
+      objectReference: {fileID: 0}
+    - target: {fileID: 689215222007149169, guid: 1caa7345e24ec7b4fb52a117a2e6cad4,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.28786826
+      objectReference: {fileID: 0}
+    - target: {fileID: 689215222007149169, guid: 1caa7345e24ec7b4fb52a117a2e6cad4,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.153005
+      objectReference: {fileID: 0}
+    - target: {fileID: 689215222007149169, guid: 1caa7345e24ec7b4fb52a117a2e6cad4,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -1.0680501
+      objectReference: {fileID: 0}
     - target: {fileID: 5853148432686805636, guid: 1caa7345e24ec7b4fb52a117a2e6cad4,
         type: 3}
       propertyPath: m_Name
@@ -114007,6 +114047,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5641341859615907197, guid: 00fb4d914d1ac1049841a1b502614a28,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7015523538323635986, guid: 00fb4d914d1ac1049841a1b502614a28,
         type: 3}
